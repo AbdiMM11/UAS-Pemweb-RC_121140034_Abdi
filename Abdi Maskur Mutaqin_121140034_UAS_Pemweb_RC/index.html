@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UAS_Pemweb_Abdi_121140034</title>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+<body>
+    <header>
+        <h1 id="header"><a>PO Chartered Abadi Jaya</a></h1>
+        <h4>Jasa Chartered Bus dari Surabaya ke Semarang dan sebaliknya.</h4>
+    </header>
+    <main>
+        <section class="form">
+            <h3>--Cek Tarif & Pemesanan--</h3>
+            <form class="input">
+                <section>
+                    <label for="kota_asal">Kota Keberangkatan</label>
+                    <select name="kota_awal" id="kota_asal">
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Mojokerto">Mojokerto</option>
+                        <option value="Jombang">Jombang</option>
+                        <option value="Kertosono">Kertosono</option>
+                        <option value="Nganjuk">Nganjuk</option>
+                        <option value="Ngawi">Ngawi</option>
+                        <option value="Sragen">Sragen</option>
+                        <option value="Solo">Solo</option>
+                        <option value="Salatiga">Salatiga</option>
+                        <option value="Semarang">Semarang</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="kota_tujuan">Kota Tujuan</label>
+                    <select name="kota_tujuan" id="kota_tujuan">
+                        <option value="Semarang">Semarang</option>
+                        <option value="Salatiga">Salatiga</option>
+                        <option value="Solo">Solo</option>
+                        <option value="Sragen">Sragen</option>
+                        <option value="Ngawi">Ngawi</option>
+                        <option value="Nganjuk">Nganjuk</option>
+                        <option value="Kertosono">Kertosono</option>
+                        <option value="Jombang">Jombang</option>
+                        <option value="Mojokerto">Mojokerto</option>
+                        <option value="Surabaya">Surabaya</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="tanggal">Tanggal Keberangkatan</label>
+                    <input type="date" name="tanggal" id="tanggal">
+                </section>
+                <section>
+                    <button type="button" onclick="check()">Cek Tarif</button>
+                </section>
+            </form>
+            <section class="popup" id="popup">
+                <p id="result">-</p>
+                <p onclick="bayar()" class="pesan">Pesan Sekarang?</p>
+            </section>
+        </section>
+        <section class="pembayaranSection" id="pembayaranSection">
+            <form class="pembayaranForm" action="./confirmation.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nama">Masukan Nama Anda :</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nama" name="nama" placeholder="Masukan Nama Anda" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="noTelp">Masukan Nomor Telepon :</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="noTelp" name="noTelp" placeholder="081xxxxxxxxx" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="noTelp">Masukan Alamat Email :</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="your-email@domain.com" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="noTelp">Tanggal Booking :</label>
+                    </div>
+                    <div class="col-75">
+                        <p class="noEdit" id="hariIni">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="noTelp">Jurusan :</label>
+                    </div>
+                    <div class="col-75">
+                        <p class="noEdit" id="jurusan">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="noTelp">Tarif :</label>
+                    </div>
+                    <div class="col-75">
+                        <p class="noEdit" id="fixTarif">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="noTelp">Tanggal Keberangkatan :</label>
+                    </div>
+                    <div class="col-75">
+                        <p class="noEdit" id="fixTanggal">-</p>
+                    </div>
+                </div>
+                  
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        <section class="news index">
+        <section class="about-us">
+            <h3>--About Us--</h3>
+            <p>PO Chartered Abadi Jaya adalah Perusahaan Otobus fiktif yang dibuat oleh Abdi Maskur Mutaqin sebagai tugas UAS Pemrograman Web RC. PO Chartered Abadi Jaya siap melayani anda hingga tujuan sampai</p>
+        </section>
+    </main>
+    <footer>
+        Copyright 2023 by Abdi Maskur Mutaqin. All Rights Reserved.
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
